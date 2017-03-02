@@ -5,7 +5,7 @@ import random
 #         '0123456789' + \
 #         ':.;,?!@#$%&()+=-*/_<> []{}`~^"\'\\'
 
-chars = 'abcdefghijklmnopqrstuvwxyz .'
+chars = "abcdefghijklmnopqrstuvwxyz .,'I"
 
 def generate_key():
     """Generate an key for our cipher"""
@@ -31,5 +31,6 @@ def substitution_result(plaintext):
     print 'Key: %s' % key
     print 'Key list: %s' % ''.join(key.values())
     print 'Plaintext: %s' % plaintext
+    print 'plaintext count: %s' % str(len(plaintext))
     print 'Encrypted: %s' % encrypted
     print 'Decrypted: %s' % decrypted
